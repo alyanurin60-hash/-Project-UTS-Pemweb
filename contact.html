@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">My Portofolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><button id="dark-mode-btn" class="btn-dark-mode">🌙 Dark Mode</button></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="page-title">
+            <h1>Contact Me</h1>
+            <p>Send a message or collaboration proposal through the form below.</p>
+        </div>
+
+        <div class="contact-card">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="nama">Full Name</label>
+                    <input type="text" id="nama" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="nama@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="pesan">Message</label>
+                    <textarea id="pesan" rows="5" placeholder="Write your message here..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+
+            <div id="notification-msg"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025I AlyaNurinFadilah. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const darkModeBtn = document.getElementById('dark-mode-btn');
+        darkModeBtn.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            if(document.body.classList.contains('dark-mode')) {
+                darkModeBtn.textContent = '☀️';
+            } else {
+                darkModeBtn.textContent = '🌙';
+            }
+        });
+
+        const contactForm = document.getElementById('contact-form');
+        const notifMsg = document.getElementById('notification-msg');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const nama = document.getElementById('nama').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const pesan = document.getElementById('pesan').value.trim();
+
+            if (nama === '' || email === '' || pesan === '') {
+                notifMsg.textContent = 'Error: Semua field wajib diisi!';
+                notifMsg.className = 'msg-error';
+                notifMsg.style.display = 'block';
+            } else {
+                notifMsg.textContent = 'Pesan berhasil dikirim!';
+                notifMsg.className = 'msg-success';
+                notifMsg.style.display = 'block';
+
+                contactForm.reset();
+            }
+        });
+    </script>
+</body>
+</html>
