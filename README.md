@@ -5,7 +5,7 @@
 **NIM:** 25091397097  
 **Program Studi:** D4 Manajemen Informatika  
 **Mata Kuliah:** Pemrograman Web  
-**Dosen Pengampu:** Ari Kurniawan, S.Kom., M.T. / Faris Abdi El Hakim, S.Kom., M.Tr.Kom.  
+**Dosen Pengampu:** Faris Abdi El Hakim, S.Kom., M.Tr.Kom.  
 
 ---
 
@@ -40,16 +40,16 @@ Aplikasi web ini merupakan halaman portofolio interaktif multi-halaman yang diba
 
 ## 3. Penjelasan Struktur Kode & Fungsionalitas
 
-### 3.1 Struktur HTML5 (20 Poin)
+### 3.1 Struktur HTML5
 - Menggunakan struktur hierarki semantik lengkap untuk aksesibilitas dan SEO.
 - Penggunaan atribut `data-category` pada elemen artikel untuk mendukung filter pencarian JavaScript.
 
-### 3.2 Desain CSS3 & Responsivitas (30 Poin)
+### 3.2 Desain CSS3 & Responsivitas
 - **Flexbox Layout**: Digunakan pada struktur Navbar dan tata letak Halaman About agar elemen tersusun seimbang.
 - **CSS Grid Layout**: Digunakan pada galeri kartu portofolio halaman Beranda dengan konfigurasi `repeat(3, 1fr)`.
 - **Media Queries**: Digunakan untuk menangani breakpoint responsif pada tablet dan mobile.
 
-### 3.3 Interaksi JavaScript (20 Poin)
+### 3.3 Interaksi JavaScript
 Implementasi 4 modul utama interaktivitas:
 1. **Event Handling**: Menangani event `click`, `keyup`, dan `submit`.
 2. **DOM Manipulation**: Mengubah konten teks (`textContent`), kelas CSS (`classList.toggle`), dan visibilitas elemen (`style.display`).
@@ -62,7 +62,7 @@ Implementasi 4 modul utama interaktivitas:
 
 1. Clone repositori ini:
    ```bash
-   git clone [https://github.com/username/uts-pemweb.git](https://github.com/username/uts-pemweb.git)
+   git clone [https://github.com/alyanurin60-hash/uts-pemweb.git]
 
 Buka file index.html langsung pada peramban web (browser) favorit Anda.
 Live Server GitHub Pages: https://github.com/alyanurin60-hash/
