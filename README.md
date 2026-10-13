@@ -62,7 +62,7 @@ Implementasi 4 modul utama interaktivitas:
 
 1. Clone repositori ini:
    ```bash
-   git clone [https://github.com/alyanurin60-hash/uts-pemweb.git]
+   git clone [https://github.com/alyanurin60-hash/-Project-UTS-Pemweb.git]
 
 Buka file index.html langsung pada peramban web (browser) favorit Anda.
 Live Server GitHub Pages: https://github.com/alyanurin60-hash/
